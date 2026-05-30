@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this specification, please cite it as below."
+
+title: "Multi-Wing GPT Autonomy Architecture"
+version: "0.1.0"
+date-released: "2026-05-30"
+
+type: software
+license: MIT
+
+authors:
+
+* name: "SamuraiWriter7"
+
+repository-code: "https://github.com/SamuraiWriter7/multi-wing-gpt-autonomy-architecture"
+
+abstract: >
+Multi-Wing GPT Autonomy Architecture is a conceptual and architectural
+specification for governed structural autonomy in role-based GPT systems.
+It defines a staged autonomy model, multi-wing role distribution, safety
+layers, governance boundaries, and an action permission model for GPT-based
+systems that require role consistency, reviewability, accountability, and
+human authority preservation.
+
+keywords:
+
+* "GPT"
+* "multi-wing architecture"
+* "structural autonomy"
+* "governed autonomy"
+* "AI safety"
+* "AI governance"
+* "role-based GPT"
+* "self-checking systems"
+* "action permission"
+* "human authority"
+* "agent architecture"
+* "civilization OS"
