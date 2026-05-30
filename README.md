@@ -1,6 +1,6 @@
 # Multi-Wing GPT Autonomy Architecture
 
-A governed structural autonomy architecture for Multi-Wing GPT systems, defining staged autonomy, safety layers, governance boundaries, and action permissions.
+A governed structural autonomy architecture for Multi-Wing GPT systems, defining staged autonomy, safety layers, governance boundaries, action permissions, conformance levels, and standardization-oriented documentation.
 
 ---
 
@@ -42,7 +42,7 @@ For example:
 * **Trace Wing** reviews evidence and origin.
 * **Value Wing** evaluates contribution and circulation.
 * **Action Wing** handles permitted operation.
-* **Balance Layer** prevents one wing from dominating.
+* **Balance Layer** prevents one Wing from dominating.
 * **Governance Layer** defines authority and limits.
 * **Human Authority Layer** preserves final decision power.
 
@@ -52,17 +52,16 @@ This creates a system where capability is distributed, checked, and governed.
 
 ## What This Repository Defines
 
-This repository defines five core documents:
+This repository defines two major document groups:
 
 ```text
-docs/autonomy-stage-model.md
-docs/multi-wing-autonomy-architecture.md
-docs/safety-layer.md
-docs/governance-boundaries.md
-docs/action-permission-model.md
+1. Core Architecture Documents
+2. Standardization Readiness Documents
 ```
 
-Together, these documents describe a framework for **governed structural autonomy** in Multi-Wing GPT systems.
+The core architecture documents define the structural model.
+
+The standardization readiness documents translate that architecture into terminology, requirements, conformance guidance, use cases, alignment mapping, and a Working Draft 0 format.
 
 ---
 
@@ -79,12 +78,21 @@ Together, these documents describe a framework for **governed structural autonom
     ├── multi-wing-autonomy-architecture.md
     ├── safety-layer.md
     ├── governance-boundaries.md
-    └── action-permission-model.md
+    ├── action-permission-model.md
+    ├── standardization-readiness.md
+    ├── glossary.md
+    ├── requirements-table.md
+    ├── conformance-guide.md
+    ├── use-cases.md
+    ├── alignment-matrix.md
+    └── working-draft-wd0.md
 ```
 
 ---
 
-## Key Documents
+# Key Documents
+
+## Core Architecture Documents
 
 ### `docs/autonomy-stage-model.md`
 
@@ -136,9 +144,95 @@ It provides the operational permission model for Multi-Wing GPT systems.
 
 ---
 
-## Recommended Reading Order
+## Standardization Readiness Documents
 
-For first-time readers, the recommended reading order is:
+### `docs/standardization-readiness.md`
+
+Defines how the Multi-Wing GPT Autonomy Architecture can be positioned for future standardization-oriented development.
+
+This document translates the architecture into standardization-facing language, including purpose, scope, terms, architecture model, requirements structure, conformance model, and readiness assessment.
+
+It does not claim that this repository is an official ISO, IEC, IEEE, regulatory, or institutional standard.
+
+---
+
+### `docs/glossary.md`
+
+Defines key terms used across the repository.
+
+This document stabilizes terminology such as Wing, Structural Autonomy, Governance Layer, Human Authority Layer, Action Boundary, Traceability, Claim Boundary, Value Boundary, and Action Permission categories.
+
+It provides the terminology foundation for requirements, conformance, and working draft documents.
+
+---
+
+### `docs/requirements-table.md`
+
+Converts the architecture into standardization-oriented requirements using `shall`, `should`, and `may`.
+
+This document organizes requirements into categories such as role separation, self-checking, boundary control, traceability, action permission, human authority, governance, persistence, value boundaries, and auditability.
+
+It provides the evaluable requirement framework for the architecture.
+
+---
+
+### `docs/conformance-guide.md`
+
+Defines how a system may be evaluated against the Multi-Wing GPT Autonomy Architecture.
+
+This document introduces three conformance levels:
+
+```text
+Level 1 — Basic Conformance
+Level 2 — Structured Conformance
+Level 3 — Governed Conformance
+```
+
+It also provides evidence types, assessment processes, gap assessment templates, and conformance statement templates.
+
+---
+
+### `docs/use-cases.md`
+
+Defines representative use cases for the architecture.
+
+This document covers documentation assistants, research assistants, tool-using assistants, scheduled workflows, multi-agent reasoning systems, publication assistants, trace-aware review systems, value and contribution review, human-in-the-loop operational assistants, and high-risk boundary examples.
+
+It shows how the architecture may be applied in practical contexts.
+
+---
+
+### `docs/alignment-matrix.md`
+
+Maps the Multi-Wing GPT Autonomy Architecture to existing AI governance, risk management, transparency, quality, fail-safe design, human-in-the-loop governance, agent governance, accountability, and auditability areas.
+
+This document does not claim formal compliance, certification, endorsement, or equivalence with any existing standard.
+
+It provides conceptual and architectural alignment mapping only.
+
+---
+
+### `docs/working-draft-wd0.md`
+
+Provides a Working Draft 0 version of the architecture.
+
+This document translates the repository into a more formal specification-style structure, including scope, terms, normative language, core principles, architecture model, Wing requirements, governance boundary requirements, action permission requirements, human authority requirements, conformance, use cases, implementation profiles, and annexes.
+
+It is not an official standard.
+
+It is a candidate working draft for architectural review and standardization-oriented development.
+
+---
+
+# Recommended Reading Order
+
+For first-time readers, the recommended reading order is divided into two paths.
+
+---
+
+## Path 1: Architecture Understanding
+
+Read these documents first to understand the core system.
 
 ```text
 1. docs/autonomy-stage-model.md
@@ -198,7 +292,89 @@ It is the operational bridge between architecture and real-world use.
 
 ---
 
-## Document Relationship
+## Path 2: Standardization Readiness
+
+After understanding the core architecture, read these documents to understand standardization-oriented development.
+
+```text
+6. docs/standardization-readiness.md
+7. docs/glossary.md
+8. docs/requirements-table.md
+9. docs/conformance-guide.md
+10. docs/use-cases.md
+11. docs/alignment-matrix.md
+12. docs/working-draft-wd0.md
+```
+
+### 6. Read the Standardization Readiness Document
+
+Read `docs/standardization-readiness.md`.
+
+This document explains how the architecture can be translated into standardization-oriented language.
+
+It defines the bridge from conceptual architecture to future working draft preparation.
+
+---
+
+### 7. Review the Glossary
+
+Read `docs/glossary.md`.
+
+This document stabilizes the terminology used throughout the repository.
+
+Clear terminology is necessary before requirements, conformance, and alignment mapping can be evaluated.
+
+---
+
+### 8. Review the Requirements Table
+
+Read `docs/requirements-table.md`.
+
+This document converts the architecture into evaluable requirements.
+
+It is the main bridge between design principles and conformance assessment.
+
+---
+
+### 9. Review the Conformance Guide
+
+Read `docs/conformance-guide.md`.
+
+This document explains how systems may be assessed at Level 1, Level 2, or Level 3 conformance.
+
+It also defines evidence expectations and gap assessment templates.
+
+---
+
+### 10. Review the Use Cases
+
+Read `docs/use-cases.md`.
+
+This document shows where the architecture may be applied and what risks and controls appear in different implementation contexts.
+
+---
+
+### 11. Review the Alignment Matrix
+
+Read `docs/alignment-matrix.md`.
+
+This document explains how Multi-Wing may conceptually align with AI management, risk management, transparency, fail-safe design, human-in-the-loop governance, agent governance, accountability, and auditability areas.
+
+---
+
+### 12. Finish with Working Draft 0
+
+Read `docs/working-draft-wd0.md`.
+
+This document consolidates the architecture into a formal specification-style working draft.
+
+It should be treated as a candidate working draft, not as an official standard.
+
+---
+
+# Document Relationship
+
+## Core Architecture Flow
 
 ```text
 Autonomy Stage Model
@@ -212,7 +388,7 @@ Governance Boundaries
 Action Permission Model
 ```
 
-In this repository:
+In this flow:
 
 * `autonomy-stage-model.md` defines how autonomy matures.
 * `multi-wing-autonomy-architecture.md` defines how roles are distributed.
@@ -220,15 +396,43 @@ In this repository:
 * `governance-boundaries.md` defines how authority is bounded.
 * `action-permission-model.md` defines when action is allowed.
 
-Together, these documents describe a framework for governed structural autonomy in Multi-Wing GPT systems.
+---
+
+## Standardization Readiness Flow
+
+```text
+Standardization Readiness
+        ↓
+Glossary
+        ↓
+Requirements Table
+        ↓
+Conformance Guide
+        ↓
+Use Cases
+        ↓
+Alignment Matrix
+        ↓
+Working Draft 0
+```
+
+In this flow:
+
+* `standardization-readiness.md` defines the path toward standardization-oriented development.
+* `glossary.md` stabilizes terminology.
+* `requirements-table.md` defines evaluable requirements.
+* `conformance-guide.md` defines how systems may be assessed.
+* `use-cases.md` provides practical implementation contexts.
+* `alignment-matrix.md` maps conceptual alignment with existing standards areas.
+* `working-draft-wd0.md` consolidates the architecture into a specification-style draft.
 
 ---
 
-## Autonomy Model
+# Autonomy Model
 
 This repository distinguishes between two types of autonomy.
 
-### Uncontrolled Autonomy
+## Uncontrolled Autonomy
 
 Uncontrolled autonomy refers to systems that:
 
@@ -242,7 +446,7 @@ This is not the goal of this architecture.
 
 ---
 
-### Structural Autonomy
+## Structural Autonomy
 
 Structural autonomy refers to systems that:
 
@@ -257,7 +461,7 @@ This is the target direction of Multi-Wing GPT systems.
 
 ---
 
-## Autonomy Stages
+# Autonomy Stages
 
 The architecture defines a staged model of autonomy:
 
@@ -278,7 +482,7 @@ The key principle is:
 
 ---
 
-## Architecture Summary
+# Architecture Summary
 
 A Multi-Wing GPT autonomy system may include the following layers:
 
@@ -294,15 +498,15 @@ Defense / Reflection / Structure / Trace / Value / Action Wings
 Output or Operation
 ```
 
-Each wing has a distinct role.
+Each Wing has a distinct role.
 
-No wing should control everything.
+No Wing should control everything.
 
 The system becomes safer not by concentrating intelligence into one agent, but by distributing responsibility across multiple bounded roles.
 
 ---
 
-## Safety Summary
+# Safety Summary
 
 The Safety Layer includes:
 
@@ -329,7 +533,7 @@ Safety is treated as the condition that makes governed autonomy possible.
 
 ---
 
-## Governance Summary
+# Governance Summary
 
 The Governance Boundaries include:
 
@@ -355,7 +559,7 @@ Final authority remains with the human operator unless explicitly delegated with
 
 ---
 
-## Action Permission Summary
+# Action Permission Summary
 
 The Action Permission Model defines seven categories:
 
@@ -379,7 +583,23 @@ Action must be bounded.
 
 ---
 
-## Use Cases
+# Conformance Summary
+
+The repository defines three candidate conformance levels.
+
+| Level   | Name                   | Summary                                                                                                                                     |
+| ------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| Level 1 | Basic Conformance      | Defines roles, boundaries, action separation, and human authority                                                                           |
+| Level 2 | Structured Conformance | Adds multiple Wings, self-checking, traceability, action permission categories, and escalation                                              |
+| Level 3 | Governed Conformance   | Adds governance layers, delegated authority controls, scheduled workflow controls, value boundaries, auditability, and conformance evidence |
+
+Conformance in this repository means architectural conformance only.
+
+It does not imply official certification, regulatory approval, legal compliance, or complete AI safety.
+
+---
+
+# Use Cases
 
 This architecture may be useful for:
 
@@ -392,13 +612,15 @@ This architecture may be useful for:
 * repository maintenance assistants,
 * trace-aware reasoning systems,
 * contribution and value-cycle review systems,
+* public-facing publication assistants,
+* human-in-the-loop operational assistants,
 * and civilization OS-style AI architecture research.
 
 ---
 
-## Design Principles
+# Design Principles
 
-### 1. Role Before Autonomy
+## 1. Role Before Autonomy
 
 Autonomy should not be added to an undefined system.
 
@@ -406,7 +628,7 @@ A GPT system should first have a clear role, purpose, and boundary.
 
 ---
 
-### 2. Self-Checking Before Tool Use
+## 2. Self-Checking Before Tool Use
 
 Before a GPT system is given external action capability, it should have self-checking behavior.
 
@@ -414,15 +636,15 @@ A system that cannot inspect its own assumptions should not be trusted with high
 
 ---
 
-### 3. Coordination Before Expansion
+## 3. Coordination Before Expansion
 
 A Multi-Wing system should not expand by simply adding more GPTs.
 
-Each additional wing should have a distinct role, a clear reason for existing, a defined relationship to other wings, and a known failure mode.
+Each additional Wing should have a distinct role, a clear reason for existing, a defined relationship to other Wings, and a known failure mode.
 
 ---
 
-### 4. Governance Before Persistence
+## 4. Governance Before Persistence
 
 Scheduled or persistent workflows should not be introduced before governance rules exist.
 
@@ -430,7 +652,7 @@ A recurring mistake is more dangerous than a one-time mistake.
 
 ---
 
-### 5. Human Authority Remains Central
+## 5. Human Authority Remains Central
 
 Structural autonomy does not remove human authority.
 
@@ -438,7 +660,36 @@ The human designer or operator remains responsible for defining purpose, approvi
 
 ---
 
-## Claim Boundaries
+# Standardization Position
+
+This repository may be used for standardization-oriented discussion, but it is not an official standard.
+
+It does not claim:
+
+* ISO status,
+* IEC status,
+* IEEE status,
+* regulatory status,
+* institutional certification,
+* legal authority,
+* or formal compliance with any existing standard.
+
+The standardization documents in this repository are intended to support:
+
+* terminology stabilization,
+* requirement mapping,
+* conformance planning,
+* use-case analysis,
+* alignment discussion,
+* and working draft preparation.
+
+The correct position is:
+
+> Multi-Wing GPT Autonomy Architecture is a candidate structural architecture for governed autonomy in GPT-based and agentic AI systems.
+
+---
+
+# Claim Boundaries
 
 This repository does not claim that GPT systems:
 
@@ -450,11 +701,11 @@ This repository does not claim that GPT systems:
 * have moral agency,
 * or become autonomous agents in the biological sense.
 
-This repository describes how GPT-based systems can become more structurally autonomous through architecture, role design, self-checking, coordination, tooling, persistence, safety controls, and governance boundaries.
+This repository describes how GPT-based systems can become more structurally autonomous through architecture, role design, self-checking, coordination, tooling, persistence, safety controls, governance boundaries, and human authority preservation.
 
 ---
 
-## Citation
+# Citation
 
 If you use this specification, please cite it using the information in `CITATION.cff`.
 
@@ -466,7 +717,7 @@ Multi-Wing GPT Autonomy Architecture
 
 ---
 
-## License
+# License
 
 This project is released under the MIT License.
 
@@ -474,19 +725,19 @@ See `LICENSE` for details.
 
 ---
 
-## Status
+# Status
 
-Initial specification release:
+Current specification status:
 
 ```text
 v0.1.0
 ```
 
-This version establishes the foundational documentation for governed structural autonomy in Multi-Wing GPT systems.
+This version establishes the foundational documentation for governed structural autonomy in Multi-Wing GPT systems and adds standardization-oriented readiness documents.
 
 ---
 
-## Conclusion
+# Conclusion
 
 Multi-Wing GPT autonomy is not the removal of control.
 
@@ -494,10 +745,15 @@ It is the distribution of responsibility.
 
 A mature GPT system should not depend on one undifferentiated intelligence.
 
-It should rely on clearly defined roles, mutual correction, governed action, and human authority.
+It should rely on clearly defined roles, mutual correction, governed action, human authority, and reviewable evidence.
 
 In this architecture:
 
 > Autonomy is not freedom from structure.
 > Autonomy is structure refined into governed operation.
 
+And in the standardization-oriented layer:
+
+> Capability requires boundaries.
+> Autonomy requires governance.
+> Conformance requires evidence.
