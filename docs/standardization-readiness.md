@@ -2,57 +2,59 @@
 
 ## Overview
 
-This document describes how the **Multi-Wing GPT Autonomy Architecture** can be positioned for future standardization discussions.
+This document describes how the **Multi-Wing GPT Autonomy Architecture** can be positioned for future standardization-oriented development.
 
-The purpose of this document is not to claim that this repository is already an official ISO, IEC, or IEEE standard.
+The purpose of this document is not to claim that this repository is already an official ISO, IEC, IEEE, or other international standard.
 
-Instead, it provides a structured bridge between the repository’s current architectural model and the language commonly used in international standardization processes.
+Instead, it provides a structured bridge between the current architectural model and the language commonly used in international standardization processes.
 
-The main goal is to translate the Multi-Wing model into a format suitable for:
+This document translates the Multi-Wing model into a format suitable for:
 
 * technical review,
 * standards-oriented discussion,
 * working draft preparation,
 * requirements mapping,
 * conformance planning,
+* use-case analysis,
 * and alignment with existing AI governance, risk, transparency, and fail-safe design standards.
 
 ---
 
 ## Standardization Intent
 
-The Multi-Wing GPT Autonomy Architecture defines a structural approach for governing autonomy in GPT-based or agentic AI systems.
+The Multi-Wing GPT Autonomy Architecture defines a structural approach for governing autonomy in GPT-based and agentic AI systems.
 
 Its standardization intent can be summarized as follows:
 
 > To define an architectural framework for structurally autonomous AI systems in which autonomy is bounded by role separation, self-checking, cross-review, governance boundaries, action permissions, and human authority.
 
-The architecture is designed to address risks such as:
+This architecture is designed to address risks such as:
 
 * role drift,
-* over-compliance,
+* unsafe over-compliance,
 * unsupported claims,
-* action leakage,
 * weak internal review,
+* action leakage,
 * unclear authority,
 * poor traceability,
+* false persistence,
 * and unsafe escalation.
 
 ---
 
 ## Standardization Purpose
 
-The purpose of a potential standard based on this architecture would be:
+A potential standard based on this architecture would have the following purpose:
 
 ```text
-To specify a role-separated autonomy architecture for GPT-based and agentic AI systems, enabling safer coordination, reviewability, permission-based action, and human-governed operation.
+To specify a role-separated autonomy architecture for GPT-based and agentic AI systems, enabling safer coordination, reviewability, permission-based action, trace-aware reasoning, and human-governed operation.
 ```
 
-This purpose can be broken down into four objectives:
+This purpose can be divided into four objectives:
 
 1. Define how AI system autonomy can be structured through specialized roles.
-2. Define how self-checking and cross-review can reduce unsafe or unsupported outputs.
-3. Define governance boundaries for action, authority, evidence, claims, persistence, and value.
+2. Define how self-checking and cross-review can reduce unsafe, unsupported, or excessive outputs.
+3. Define governance boundaries for role, claim, evidence, action, authority, value, and persistence.
 4. Define conformance criteria for systems claiming to implement a Multi-Wing autonomy model.
 
 ---
@@ -72,7 +74,13 @@ A potential standard based on this architecture would apply to:
 
 The architecture focuses on external system structure, not model internals.
 
-It does not require access to model weights, training data, or internal algorithms.
+It does not require access to:
+
+* model weights,
+* training data,
+* hidden chain-of-thought,
+* internal algorithms,
+* or proprietary model implementation details.
 
 The focus is on:
 
@@ -99,6 +107,7 @@ The following are outside the scope of this architecture:
 * replacing legal or regulatory authority,
 * assigning rights or ownership automatically,
 * guaranteeing complete AI safety,
+* guaranteeing regulatory compliance,
 * or creating fully independent AI governance.
 
 The architecture should be understood as a governance-oriented system design framework.
@@ -162,7 +171,13 @@ A **Human Authority Layer** preserves final human decision power over consequent
 
 **Structural Autonomy** means the ability of an AI system to maintain its assigned role, perform self-checking, coordinate with complementary roles, and operate within predefined governance boundaries.
 
-It does not imply independent will, consciousness, or unrestricted agency.
+Structural Autonomy does not imply:
+
+* independent will,
+* consciousness,
+* unrestricted agency,
+* legal authority,
+* or self-directed moral agency.
 
 ---
 
@@ -192,19 +207,19 @@ Action Wing
 
 ### Defense Wing
 
-Detects unsafe framing, manipulation, role hijacking, and over-compliance.
+Detects unsafe framing, manipulation, role hijacking, hostile prompting, and unsafe over-compliance.
 
 ### Reflection Wing
 
-Reviews assumptions, claim strength, internal consistency, and overstatement.
+Reviews assumptions, claim strength, internal consistency, uncertainty, and overstatement.
 
 ### Structure Wing
 
-Maps system structure, dependencies, layers, and hidden patterns.
+Maps system structure, dependencies, layers, role relationships, and hidden patterns.
 
 ### Trace Wing
 
-Reviews sources, evidence, origin, attribution, and causal chains.
+Reviews sources, evidence, origin, references, attribution, and causal chains.
 
 ### Value Wing
 
@@ -361,7 +376,8 @@ Escalation should occur when:
 * external action is requested,
 * safety boundaries are unclear,
 * third-party impact is possible,
-* or value allocation is involved.
+* value allocation is involved,
+* or persistent workflow scope is unclear.
 
 Escalation options may include:
 
@@ -521,7 +537,7 @@ These documents provide:
 * governance boundaries,
 * and action permission model.
 
-Additional documents needed for standardization readiness include:
+Additional documents recommended for standardization readiness include:
 
 ```text
 docs/standardization-readiness.md
@@ -530,17 +546,44 @@ docs/requirements-table.md
 docs/conformance-guide.md
 docs/use-cases.md
 docs/alignment-matrix.md
+docs/working-draft-wd0.md
 ```
+
+---
+
+## Development Roadmap
+
+A practical standardization-oriented development path is:
+
+```text
+1. Stabilize terminology
+2. Create a glossary
+3. Convert architectural principles into requirements
+4. Create a requirements table
+5. Define conformance levels
+6. Create a conformance guide
+7. Create use cases
+8. Create an alignment matrix
+9. Prepare a Working Draft 0
+```
+
+This sequence allows the architecture to mature from conceptual documentation into a reviewable specification.
 
 ---
 
 ## Claim Boundaries
 
-This document does not claim that the Multi-Wing GPT Autonomy Architecture is currently an official ISO, IEC, or IEEE standard.
+This document does not claim that the Multi-Wing GPT Autonomy Architecture is currently an official ISO, IEC, IEEE, or other international standard.
 
-It does not claim that the architecture has been reviewed, approved, or adopted by any standards body.
+It does not claim that the architecture has been reviewed, approved, endorsed, or adopted by any standards body.
 
-It also does not claim that conformance to this architecture guarantees legal compliance, regulatory approval, or complete AI safety.
+It also does not claim that conformance to this architecture guarantees:
+
+* legal compliance,
+* regulatory approval,
+* complete AI safety,
+* institutional acceptance,
+* or technical correctness in all implementations.
 
 This document only defines a standardization-oriented roadmap and translation layer.
 
@@ -568,3 +611,5 @@ Formalization means translating the existing architecture into clearer requireme
 In this sense, Multi-Wing is not only a conceptual architecture.
 
 It is a candidate framework for governed structural autonomy in GPT-based and agentic AI systems.
+
+
